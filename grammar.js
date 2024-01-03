@@ -76,7 +76,7 @@ module.exports = grammar({
         ),
 
         value: ($) => choice($.ident, $.num),
-        ident: ($) => /[a-zA-Z][a-zA-Z0-9]*/,
+        ident: ($) => /[_a-zA-Z][_a-zA-Z0-9]*/,
         num: ($) => /\d+/
     }
 });
